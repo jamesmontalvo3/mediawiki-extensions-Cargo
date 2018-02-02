@@ -26,7 +26,7 @@ class CargoUtils {
 			return self::$CargoDB;
 		}
 
-		global $wgDBuser, $wgDBpassword, $wgDBprefix;
+		global $wgDBuser, $wgDBpassword, $wgDBprefix, $wgDBservers;
 		global $wgCargoDBserver, $wgCargoDBname, $wgCargoDBuser, $wgCargoDBpassword, $wgCargoDBtype;
 		$dbw = wfGetDB( DB_MASTER );
 		$server = $dbw->getServer();
